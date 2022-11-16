@@ -31,8 +31,8 @@
     
     position: absolute;
     align-self: start;
-    width: 50%;
-    height: 50%;
+    width: 13vh;
+    height: 10vh;
 }
 
 
@@ -228,6 +228,10 @@ p {
     .table{
         margin-top:25%;
     }
+	
+	.logo {
+		opacity:0;
+	}
  
    
 }
