@@ -18,6 +18,8 @@ ul {
     margin-bottom: 2rem;
     width: 100%;
     min-height: 40vh;
+	overflow-x:hidden;
+	word-wrap: break-word;
 }
 
 .phrase {
@@ -91,6 +93,9 @@ ul {
     padding: 1rem 2rem;
     border-width: 3px;
     border-style: solid;
+	align-items:center;
+	overflow-x:hidden;
+	word-wrap: break-word;
 }
 
 @keyframes hide {
@@ -135,4 +140,19 @@ ul {
         background-color: var(--colorMain);
         width: 90%;
     }
+}
+
+@media screen and (max-width:900px){
+	
+	.phrases__buttons {
+    flex-direction:column;
+}
+	
+	.phrases {
+    margin-left:10%
+    width: 20%;
+    
+}
+	
+	
 }
