@@ -1,0 +1,138 @@
+ul {
+    list-style: none;
+}
+
+.phrases {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phrases__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.phrase {
+    width: 90%;
+    max-height: 100vh;
+    padding: 1rem 2rem;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.changed__phrases {
+    width: 100%;
+    position: absolute;
+    transform: translateY(0);
+    top: var(--changed-from);
+    left: 0;
+    z-index: 5;
+}
+
+.changed__phrases.select {
+    animation: changed-select 1s ease forwards;
+}
+
+.changed__phrases.unselect {
+    animation: changed-unselect 1s ease forwards;
+}
+
+.phrase.hide {
+    opacity: 0;
+    animation: hide 1s ease forwards;
+}
+
+.phrase.reduce {
+    animation: to-small 1s ease forwards;
+}
+
+.phrase, .phrases__button {
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: all .2s ease;
+    background: transparent;
+}
+
+.eng__phrases{
+	margin-top:4rem;
+}
+
+.eng__phrases.recolored .phrase {
+    background-color: mediumseagreen;
+}
+
+.eng__phrases .phrase, .changed__phrases .phrase, .ru__phrases .phrase:hover {
+    width: 100%;
+}
+
+.eng__phrases .phrase, .changed__phrases .phrase, .recolor, .ru__phrases .phrase:hover {
+    background: darkseagreen;
+}
+
+.phrases__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.phrases__button {
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    border-width: 3px;
+    border-style: solid;
+}
+
+@keyframes hide {
+    from {
+        max-height: 100vh;
+        padding: 1rem 2rem;
+        border-width: 5px;
+    }
+    to {
+        max-height: 0;
+        padding: 0;
+        border-width: 0;
+    }
+}
+
+@keyframes changed-select {
+    from {
+        transform: translateY(0);
+        top: var(--changed-from);
+    }
+    to {
+        transform: translateY(-100%);
+        top: var(--changed-to);
+    }
+}
+
+@keyframes changed-unselect {
+    from {
+        top: var(--changed-from);
+    }
+    to {
+        top: var(--changed-to);
+    }
+}
+
+@keyframes to-small {
+    from {
+        background-color: var(--colorDarkMain);
+        width: 100%;
+    }
+    to {
+        background-color: var(--colorMain);
+        width: 90%;
+    }
+}

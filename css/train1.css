@@ -1,0 +1,231 @@
+
+
+.square1 {
+    position: absolute;
+    width: 80px;
+    height: 35px;
+    top: 30%;
+    left: 10%;
+    background: #A58CB6;
+    z-index: 3;
+}
+
+.square2 {
+    position: absolute;
+    width: 80px;
+    height: 35px;
+    top: 18%;
+    left: 10%;
+    background: #343434;
+    z-index: 3
+}
+
+.square3 {
+    position: absolute;
+    width: 80px;
+    height: 35px;
+    top: 30%;
+    left: 55%;
+    background: #A58CB6;
+    z-index: 3
+}
+
+.square4 {
+    position: absolute;
+    width: 80px;
+    height: 35px;
+    top: 18%;
+    left: 55%;
+    background: #343434;
+    z-index: 3
+}
+
+.wheel1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 40%;
+    left: 12%;
+    border-radius: 50%;
+    background: black;
+    z-index: 5
+}
+
+.wheel_center1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 41%;
+    left: 14.5%;
+    background: yellow;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 6
+}
+
+.tube {
+    position: absolute;
+    width: 10px;
+    top: 10%;
+    left: 15%;
+    height: 50px;
+    background: #A58C23;
+    z-index: 1
+}
+
+
+
+.nose {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    left: 4%;
+    border-radius: 50%;
+    background: linear-gradient(90deg, red, white);
+    z-index: 2 ;
+}
+
+.head {
+    position: absolute;
+    width: 45px;
+    height: 25px;
+    top: 6%;
+    left: 25%;
+    border-radius: 10%;
+    background: red;
+    z-index: 3
+}
+
+.window {
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    top: 8%;
+    left: 27%;
+    border-radius: 10%;
+    background: white;
+    z-index: 4
+}
+
+.bubble1 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 18%;
+    top: 3%;
+    border-radius: 50%;
+    background: linear-gradient(45deg, blue, white);
+    z-index: 5
+}
+
+.bubble2 {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    left: 25%;
+    top: 1%;
+    border-radius: 50%;
+    background: linear-gradient(45deg, blue, white);
+    z-index: 5
+}
+
+.bubble3 {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 30%;
+    border-radius: 50%;
+    background: linear-gradient(45deg, blue, white);
+    z-index: 5
+}
+
+.wheel2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 40%;
+    left: 33%;
+    border-radius: 50%;
+    background: black;
+    z-index: 5
+}
+
+.wheel_center2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 41%;
+    left: 35.5%;
+    background: yellow;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 6
+}
+
+.wheel3 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 40%;
+    left: 55%;
+    border-radius: 50%;
+    background: black;
+    z-index: 5
+}
+
+.wheel_center3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 41%;
+    left: 57.5%;
+    background: yellow;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 6
+}
+
+.wheel4 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 40%;
+    left: 80%;
+    border-radius: 50%;
+    background: black;
+    z-index: 5
+}
+
+.wheel_center4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 41%;
+    left: 82.5%;
+    background: yellow;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    z-index: 6
+}
+
+.trail {
+    position: absolute;
+    width: 170px;
+    height: 5px;
+    top: 55%;
+    left: 11%;
+    background:black
+}
+
+.boxblocks {
+    position: absolute;
+    top: 57.5%;
+    display: flex
+}
+
+.blocktrail {
+    height: 0;
+    width: 14.5px;
+    margin-left: 22px;
+    border-bottom: 12.5px solid grey;
+    border-left: 6.5px solid transparent;
+    border-right: 6.5px solid transparent;
+    background: none
+}

@@ -1,0 +1,196 @@
+.boxSign {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    width: 100px;
+    height: 100px;
+    background: white;
+
+}
+.boxSignHead {
+    position: relative;
+    margin-top: 0;
+    display: block;
+    width: 50%;
+    height: 100%;
+    align-self:center
+    
+}
+
+
+.logo {
+    /*display:flex;
+    flex-direction:row;*/
+    position: absolute;
+    align-self: start;
+    width: 20%;
+    height: 80%;
+}
+
+ 
+
+
+
+
+
+.head_base {
+   width: 60%;
+    position: absolute;
+    height: 45%;
+    background: green;
+    border-radius: 100px/50px;
+    left: 20%;
+    top: 5%;
+}
+
+
+.head_low {
+       width: 90%;
+    position: absolute;
+    height: 64%;
+    background: green;
+    border-radius: 100px/50px;
+    left: 5%;
+    top: 30%;
+}
+
+.nose {
+    position: absolute;
+    width: 20%;
+    height: 24%;
+    background: grey;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    top: 51%;
+    left: 40%;
+}
+
+.noseHoleL {
+    width: 3%;
+    position: absolute;
+    height: 3%;
+    background: black;
+    border-radius: 50%;
+    top: 70%;
+    left: 45%;
+}
+
+.noseHoleR {
+    width: 3.2%;
+    position: absolute;
+    height: 3%;
+    background: black;
+    border-radius: 50%;
+    top: 70%;
+    left: 52%
+}
+
+.mouth {
+    width: 19%;
+    height: 10%;
+    background: grey;
+    border-radius: 20% 20% 50% 50%;
+    position: absolute;
+    top: 77%;
+    left: 40.5%;
+}
+
+.leftEyeRound {
+   width: 10%;
+    height: 18%;
+    background: darkgrey;
+    border-radius: 10px/5px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    z-index: 1;
+}
+
+.rightEyeRound {
+   width: 10%;
+    height: 18%;
+    background: darkgrey;
+    border-radius: 10px/5px;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    z-index: 1;
+}
+
+.leftEyeCenter {
+   width: 5%;
+    height: 10%;
+    background: black;
+    border-radius: 10px/5px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    z-index: 1;
+}
+
+.rightEyeCenter {
+    width: 5%;
+    height: 10%;
+    background: black;
+    border-radius: 10px/5px;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    z-index: 1;
+}
+
+.tooth {
+    width: 0.2%;
+    height: 10%;
+    background: black;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+}
+
+.leftEar {
+    position: absolute;
+    width: 20%;
+    height: 24%;
+    background: green;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    transform: rotate(45deg);
+    left: 64%;
+    top: 5%;
+    z-index: 0;
+}
+
+.rightEar {
+    position: absolute;
+    width: 20%;
+    height: 24%;
+    background: green;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    transform: rotate(315deg);
+    left: 15%;
+    top: 5%;
+    z-index: 0;
+}
+
+.highLip {
+    width: 20%;
+    height: 5%;
+    background: darkgreen;
+    border-radius: 50% 50% 20% 20%;
+    position: absolute;
+    top: 74%;
+    left: 40%;
+    z-index: 2;
+}
+
+.lowLip {
+    width: 22%;
+    height: 5%;
+    background: darkgreen;
+    border-radius: 20% 20% 50% 50%;
+    position: absolute;
+    top: 83%;
+    left: 39%;
+    z-index: 2;
+}
+
