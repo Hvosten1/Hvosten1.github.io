@@ -140,7 +140,7 @@ p {
     display:none
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1000px){
     .header {
         flex-direction: row;
         padding: 0 1.5rem;
