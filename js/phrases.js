@@ -141,7 +141,7 @@ const engToRu = (event) => {
 
         ru.classList.add('reduce');
         setTimeout(() => ru.classList.remove('reduce'), 1000);
-    }, 500);
+    }, 700);
 }
 
 addButton.addEventListener('click', add);

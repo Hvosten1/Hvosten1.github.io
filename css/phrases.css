@@ -86,7 +86,7 @@ ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
-}
+	}
 
 .phrases__button {
     border-radius: 15px;
