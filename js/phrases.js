@@ -106,7 +106,7 @@ const ruToEng = (event) => {
         ruPhrases.removeChild(phrase);
         changedPhrases.removeChild(temp);
         changedPhrases.classList.remove('select');
-    }, 1000);
+    }, 500);
 }
 
 const engToRu = (event) => {
@@ -141,7 +141,7 @@ const engToRu = (event) => {
 
         ru.classList.add('reduce');
         setTimeout(() => ru.classList.remove('reduce'), 1000);
-    }, 1000);
+    }, 500);
 }
 
 addButton.addEventListener('click', add);
