@@ -5,8 +5,30 @@ let phrases =  [
     { ru: 'Беда не приходит одна', eng: 'Nulla calamitas sola' },
     { ru: 'Через тернии к звёздам', eng: 'Per aspera ad astra' },
 ];
-let currentR = Math.floor(Math.random() * phrases.length);
+//let currentR = Math.floor(Math.random() * phrases.length);
 
+function shuffle(array) {
+    var i = array.length,
+        j = 0,
+        temp;
+
+    while (i--) {
+
+        j = Math.floor(Math.random() * (i+1));
+
+        // swap randomly chosen element with current element
+        temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+
+    }
+
+    return array;
+}
+
+var ranNums = shuffle([0,1,2,3]);
+console.log(ranNums);
+//let currentR = ranNums.next().value;
 let current = 0;
 
 const phrasesContainer = document.querySelector('.phrases__container');
@@ -31,11 +53,11 @@ function cssVariableValue(name, value) {
 
 const add = () => {
 	
-	if (currentR===phrases.length) currentR = 0;
-    const phraseText = `${currentR + 1} ${phrases[currentR]?.ru}`;
+	//if (currentR===phrases.length) currentR = 0;
+    const phraseText = `${ranNums[current] + 1} ${phrases[ranNums[current]]?.ru}`;
     if (current === phrases.length) return;
 	
-	currentR +=1;
+	//currentR = ranNums.next().value;
     current += 1;
 
     const phrase = document.createElement('li');
