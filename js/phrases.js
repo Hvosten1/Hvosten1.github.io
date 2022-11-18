@@ -1,10 +1,13 @@
-let current = 0;
+
 let phrases =  [
     { ru: 'Привычка - вторая натура', eng: 'Consuetudo est altera natura' },
     { ru: 'Заметьте хорошо!', eng: 'Nota bene' },
     { ru: 'Беда не приходит одна', eng: 'Nulla calamitas sola' },
     { ru: 'Через тернии к звёздам', eng: 'Per aspera ad astra' },
 ];
+let currentR = Math.floor(Math.random() * phrases.length);
+
+let current = 0;
 
 const phrasesContainer = document.querySelector('.phrases__container');
 const controlsContainer = document.querySelector('.phrases__buttons');
@@ -27,9 +30,12 @@ function cssVariableValue(name, value) {
 }
 
 const add = () => {
-    const phraseText = `${current + 1} ${phrases[current]?.ru}`;
+	
+	if (currentR===phrases.length) currentR = 0;
+    const phraseText = `${currentR + 1} ${phrases[currentR]?.ru}`;
     if (current === phrases.length) return;
-
+	
+	currentR +=1;
     current += 1;
 
     const phrase = document.createElement('li');
