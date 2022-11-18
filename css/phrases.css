@@ -78,7 +78,7 @@ ul {
     width: 100%;
 }
 
-.eng__phrases .phrase, .changed__phrases .phrase, .recolor, .ru__phrases .phrase:hover {
+.eng__phrases .phrase, .changed__phrases .phrase, .add, .recolor, .ru__phrases .phrase:hover {
     background: darkseagreen;
 }
 
